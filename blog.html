@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,6 +6,8 @@
   <title>Blog - Dev Project</title>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -20,79 +22,87 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://obito-s-phantom-network.vercel.app/">Portfolio</a></li>
       </ul>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <button class="theme-toggle" id="theme-toggle">🌙</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
     </nav>
   </header>
 
   <!-- ===== BLOG LIST ===== -->
   <main class="blog">
-    <h2>My Web Dev Journey Blog</h2>
+    <h2>📖 My Web Dev Journey Blog</h2>
+    <p class="intro">Here are some highlights from my journey into web development.</p>
 
-    <!-- BLOG 1 -->
-    <article class="blog-preview">
-      <h3>My First Week Learning HTML</h3>
-      <small>Posted on August 15, 2025</small>
-      <p>This week, I started learning the basics of HTML. It was exciting to build my first web page...</p>
-      <div class="full-content">
-        <p>I learned about headings, paragraphs, lists, and links. Even though it looks simple, HTML is the foundation of every website.</p>
-        <p>I felt proud when I opened my first webpage in a browser. It was a small step, but it made me feel like a real web developer.</p>
-      </div>
-      <button class="read-more">Read More</button>
-    </article>
+    <section class="cards">
+      <!-- BLOG 1 -->
+      <article class="card blog-preview">
+        <h3><i data-lucide="file-code"></i> My First Week Learning HTML</h3>
+        <small>📅 Feburary 15, 2025</small>
+        <p>This week, I started learning the basics of HTML. It was exciting to build my first web page...</p>
+        <div class="full-content">
+          <p>I learned about headings, paragraphs, lists, and links. Even though it looks simple, HTML is the foundation of every website.</p>
+          <p>I felt proud when I opened my first webpage in a browser. It was a small step, but it made me feel like a real web developer.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </article>
 
-    <!-- BLOG 2 -->
-    <article class="blog-preview">
-      <h3>CSS Made My Websites Beautiful</h3>
-      <small>Posted on August 20, 2025</small>
-      <p>After HTML, I started learning CSS. At first, it felt confusing, but soon I realized how powerful it is...</p>
-      <div class="full-content">
-        <p>I learned about colors, fonts, margins, padding, and layouts. I could finally style my website and make it look nice!</p>
-        <p>It was fun experimenting with different designs, and I’m starting to develop my own style.</p>
-      </div>
-      <button class="read-more">Read More</button>
-    </article>
+      <!-- BLOG 2 -->
+      <article class="card blog-preview">
+        <h3><i data-lucide="palette"></i> CSS Made My Websites Beautiful</h3>
+        <small>📅 Feburary 20, 2025</small>
+        <p>After HTML, I started learning CSS. At first, it felt confusing, but soon I realized how powerful it is...</p>
+        <div class="full-content">
+          <p>I learned about colors, fonts, margins, padding, and layouts. I could finally style my website and make it look nice!</p>
+          <p>It was fun experimenting with different designs, and I’m starting to develop my own style.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </article>
 
-    <!-- BLOG 3 -->
-    <article class="blog-preview">
-      <h3>Discovering JavaScript</h3>
-      <small>Posted on August 25, 2025</small>
-      <p>When I started JavaScript, things became more dynamic. My websites could finally respond to users...</p>
-      <div class="full-content">
-        <p>I learned about variables, functions, and events. Suddenly, buttons could react when clicked, and forms could validate inputs.</p>
-        <p>At first, it was overwhelming, but I love the fact that I can make websites interactive now.</p>
-      </div>
-      <button class="read-more">Read More</button>
-    </article>
+      <!-- BLOG 3 -->
+      <article class="card blog-preview">
+        <h3><i data-lucide="cpu"></i> Discovering JavaScript</h3>
+        <small>📅 Feburary 25, 2025</small>
+        <p>When I started JavaScript, things became more dynamic. My websites could finally respond to users...</p>
+        <div class="full-content">
+          <p>I learned about variables, functions, and events. Suddenly, buttons could react when clicked, and forms could validate inputs.</p>
+          <p>At first, it was overwhelming, but I love the fact that I can make websites interactive now.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </article>
 
-    <!-- BLOG 4 -->
-    <article class="blog-preview">
-      <h3>Building My First Project</h3>
-      <small>Posted on September 1, 2025</small>
-      <p>I decided to challenge myself by building a small project. It wasn’t perfect, but it was mine...</p>
-      <div class="full-content">
-        <p>I built a simple to-do list app using HTML, CSS, and JavaScript. It taught me how to plan, structure, and debug code.</p>
-        <p>It was frustrating at times, but finishing it gave me so much confidence.</p>
-      </div>
-      <button class="read-more">Read More</button>
-    </article>
+      <!-- BLOG 4 -->
+      <article class="card blog-preview">
+        <h3><i data-lucide="check-square"></i> Building My First Project</h3>
+        <small>📅 March 1, 2025</small>
+        <p>I decided to challenge myself by building a small project. It wasn’t perfect, but it was mine...</p>
+        <div class="full-content">
+          <p>I built a simple to-do list app using HTML, CSS, and JavaScript. It taught me how to plan, structure, and debug code.</p>
+          <p>It was frustrating at times, but finishing it gave me so much confidence.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </article>
 
-    <!-- BLOG 5 -->
-    <article class="blog-preview">
-      <h3>The Road Ahead</h3>
-      <small>Posted on September 10, 2025</small>
-      <p>Now that I’ve covered the basics, I’m excited to dive deeper into frameworks and backend development...</p>
-      <div class="full-content">
-        <p>I plan to learn React, Node.js, and databases next. My dream is to build full-stack applications and eventually work as a professional developer.</p>
-        <p>This journey has only just begun, and I can’t wait to see where it takes me.</p>
-      </div>
-      <button class="read-more">Read More</button>
-    </article>
+      <!-- BLOG 5 -->
+      <article class="card blog-preview">
+        <h3><i data-lucide="rocket"></i> The Road Ahead</h3>
+        <small>📅 March 10, 2025</small>
+        <p>Now that I’ve covered the basics, I’m excited to dive deeper into frameworks and backend development...</p>
+        <div class="full-content">
+          <p>I plan to learn React, Node.js, and databases next. My dream is to build full-stack applications and eventually work as a professional developer.</p>
+          <p>This journey has only just begun, and I can’t wait to see where it takes me.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </article>
+    </section>
   </main>
 
   <!-- ===== FOOTER ===== -->
   <footer>
     <p>© 2025 Dev Project. All rights reserved.</p>
   </footer>
+
+  <!-- Activate Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

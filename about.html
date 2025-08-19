@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Dev Project</title>
+  <title>Dev Project - Home</title>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -13,42 +15,119 @@
     <h1>Dev Project</h1>
     <nav>
       <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://obito-s-phantom-network.vercel.app/">Portfolio</a></li>
       </ul>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <button class="theme-toggle" id="theme-toggle">🌙</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
     </nav>
   </header>
 
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <h2>Welcome to My Journey 🚀</h2>
+    <p>This is my personal space to share my path of becoming a web developer.</p>
+  </section>
+
   <!-- ===== MAIN CONTENT ===== -->
   <main>
+    <!-- About the Project -->
     <section class="intro">
-      <h2>About Me</h2>
+      <h2>About This Project</h2>
       <p>
-        Hello 👋 I’m <strong>Alvin Melchizedek Efezino</strong>, an aspiring web developer 
-        passionate about creating interactive and useful websites.
-      </p>
-      <p>
-        I started my journey learning <strong>HTML, CSS, and JavaScript</strong>, and I’m building projects like this site to improve step by step. 
-        My goal is to become a <strong>full-stack developer</strong> and create apps that people enjoy using.
+        I started learning web development to build creative and useful projects.
+        This site is both a portfolio and a log of my progress as I move from
+        beginner to pro.
       </p>
     </section>
 
+    <!-- Featured Sections -->
     <section class="cards">
       <div class="card">
-        <h3>My Skills</h3>
-        <p>Currently learning front-end development with a focus on responsive design, accessibility, and interactivity.</p>
+        <h3><i data-lucide="book-open"></i> Latest Blog Posts</h3>
+        <p>Check out my latest thoughts and lessons on web development.</p>
+        <a href="blog.html" class="read-more">Visit Blog →</a>
       </div>
 
       <div class="card">
-        <h3>My Goals</h3>
-        <p>I aim to master full-stack development and build real-world applications that solve problems.</p>
+        <h3><i data-lucide="code"></i> My Services</h3>
+        <p>I build modern, responsive websites and applications for clients.</p>
+        <a href="services.html" class="read-more">See Services →</a>
       </div>
+
+      <div class="card">
+        <h3><i data-lucide="mail"></i> Get In Touch</h3>
+        <p>Interested in working together? Reach out via my contact form.</p>
+        <a href="contact.html" class="read-more">Contact Me →</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="cpu"></i> Skills</h3>
+        <p>Proficient in HTML, CSS, JavaScript, and currently learning React & Node.js.</p>
+      </div>
+      <div class="card">
+        <h3><i data-lucide="layout-dashboard"></i> Design</h3>
+        <p>Focused on responsive design, accessibility, and creating clean UI/UX.</p>
+      </div>
+      <div class="card">
+        <h3><i data-lucide="rocket"></i> Learning Path</h3>
+        <p>Constantly expanding my knowledge with projects and open-source work.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="folder-open"></i> Featured Projects</h3>
+        <p>Explore some of my best work and creative experiments.</p>
+        <a href="https://obito-s-phantom-network.vercel.app/" class="read-more">View Portfolio →</a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="users"></i> Testimonials</h3>
+        <p>“Alvin is a hardworking and creative developer who always pushes for better solutions.”</p>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="map-pin"></i> My Journey</h3>
+        <p>I started coding using free online tutorials, building small projects, and gradually moving to bigger ideas.</p>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="gamepad-2"></i> Hobbies</h3>
+        <p>When I’m not coding, I enjoy gaming 🎮, reading 📚, and exploring new tech trends.</p>
+      </div>
+    </section>
+
+    <!-- Fun Fact Section -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="smile"></i> Fun Fact</h3>
+        <p>I once built a complete website entirely from my phone before getting a laptop!</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Let’s Build Something Great Together!</h2>
+      <p>If you’re looking for a passionate developer to bring your ideas to life, I’d love to collaborate.</p>
+      <a href="contact.html" class="btn">Hire Me →</a>
     </section>
   </main>
 
@@ -56,5 +135,11 @@
   <footer>
     <p>© 2025 Dev Project. All rights reserved.</p>
   </footer>
+
+  <!-- Initialize Lucide -->  
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
+

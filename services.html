@@ -6,6 +6,8 @@
   <title>Services - Dev Project</title>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -20,26 +22,42 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://obito-s-phantom-network.vercel.app/">Portfolio</a></li>
       </ul>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <button class="theme-toggle" id="theme-toggle">🌙</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
     </nav>
   </header>
 
   <!-- ===== MAIN CONTENT ===== -->
   <main>
     <section>
-      <h2>My Services</h2>
-      <div class="card">
-        <h3>Web Design</h3>
-        <p>I create simple, modern, and responsive web designs.</p>
-      </div>
-      <div class="card">
-        <h3>Front-End Development</h3>
-        <p>Using HTML, CSS, and JavaScript to build interactive websites.</p>
-      </div>
-      <div class="card">
-        <h3>Learning Projects</h3>
-        <p>Small projects to practice and grow my coding skills.</p>
+      <h2>⚡ My Services</h2>
+      <p class="intro">Here are the main areas I focus on as I grow my web development journey.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3><i data-lucide="layout"></i> Web Design</h3>
+          <p>I create simple, modern, and responsive web designs that work across all devices.</p>
+        </div>
+
+        <div class="card">
+          <h3><i data-lucide="code"></i> Front-End Development</h3>
+          <p>Using HTML, CSS, and JavaScript to build interactive and user-friendly websites.</p>
+        </div>
+
+        <div class="card">
+          <h3><i data-lucide="lightbulb"></i> Learning Projects</h3>
+          <p>Small projects to practice, experiment, and grow my coding skills step by step.</p>
+        </div>
+
+        <div class="card">
+          <h3><i data-lucide="server"></i> Future Back-End</h3>
+          <p>Exploring Node.js and databases to eventually build full-stack applications.</p>
+        </div>
+
+        <div class="card">
+          <h3><i data-lucide="rocket"></i> Personal Projects</h3>
+          <p>From to-do apps to small experiments, I’m always building something new to learn.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -48,5 +66,10 @@
   <footer>
     <p>© 2025 Dev Project. All rights reserved.</p>
   </footer>
+
+  <!-- Activate Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

@@ -6,6 +6,8 @@
   <title>Contact - Dev Project</title>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -20,8 +22,8 @@
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="https://obito-s-phantom-network.vercel.app/">Portfolio</a></li>
       </ul>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <button class="theme-toggle" id="theme-toggle">🌙</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
     </nav>
   </header>
 
@@ -32,6 +34,35 @@
       <p>If you’d like to reach out, feel free to send me a message below:</p>
     </section>
 
+    <!-- Contact Cards -->
+    <section class="cards">
+      <div class="card">
+        <h3><i data-lucide="mail"></i> Email</h3>
+        <p>tobigrant952@gmail.com</p>
+      </div>
+
+      <div class="card">
+        <h3><i data-lucide="phone"></i> Phone</h3>
+        <p>+234 (805) 984-5537</p>
+      </div>
+
+      <div class="card">
+        <h3><i data-lucide="map-pin"></i> Location</h3>
+        <p>Ogun, Nigeria</p>
+      </div>
+
+      <div class="card">
+        <h3><i data-lucide="linkedin"></i> LinkedIn</h3>
+        <p><a href="#">linkedin.com/in/alvin</a></p>
+      </div>
+
+      <div class="card">
+        <h3><i data-lucide="github"></i> GitHub</h3>
+        <p><a href="https://github.com/TobiGrant-byte">github.com/mygithub</a></p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
     <section class="contact-form">
       <form>
         <label for="name">Your Name</label>
@@ -52,5 +83,11 @@
   <footer>
     <p>© 2025 Dev Project. All rights reserved.</p>
   </footer>
+
+  <!-- Activate Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
+

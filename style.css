@@ -336,3 +336,91 @@ header nav { position: relative; }
     color: var(--primary-color);
   }
 }
+
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.about h1 {
+  grid-column: 1 / -1; /* Title spans across grid */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.about-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.about-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #4dabf7;
+}
+
+.about-card h2 svg {
+  width: 22px;
+  height: 22px;
+}
+
+.about-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Dark mode support */
+body.dark .about-card {
+  background: #1e1e1e;
+  color: #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* ===== Hire Me Button Styling ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, var(--primary-color), #005f99);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #005f99, var(--primary-color));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Dark mode support */
+body.dark .btn {
+  background: linear-gradient(135deg, #66c0ff, #3399ff);
+  color: #000;
+}
+
+body.dark .btn:hover {
+  background: linear-gradient(135deg, #3399ff, #66c0ff);
+}
